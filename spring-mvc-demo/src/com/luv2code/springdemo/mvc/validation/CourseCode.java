@@ -13,16 +13,15 @@ import javax.validation.Payload;
 @Retention(RetentionPolicy.RUNTIME)
 public @interface CourseCode {
 	
-	//define default coourse code
-	public String value() default "LUV";
+	//define default course code
+	public String[] value() default {"LUV"};
 	
 	// define default error message
 	public String message() default "must start with LUV";
 
-	
 	// define default groups
 	public Class<?>[] groups() default {};
 	
-	// define default payloads
+	// define default pay loads
 	public Class<? extends Payload>[] payload() default {};
 }

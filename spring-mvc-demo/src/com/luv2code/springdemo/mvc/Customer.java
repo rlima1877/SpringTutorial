@@ -6,6 +6,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
+import com.luv2code.springdemo.mvc.validation.CourseCode;
+
 public class Customer {
 	
 	//added this comment to test the gitpush
@@ -28,6 +30,9 @@ public class Customer {
 	@NotNull
 	@Pattern(regexp="^[a-zA-z0-9]{5}", message="only 5 char/digits")
 	private String zipCode;
+	
+	@CourseCode (value = "TOPS",message = "must start with TOPS")
+	private String courseCode;
 	
 	public Customer() {
 		
@@ -62,6 +67,14 @@ public class Customer {
 
 	public void setZipCode(String zipCode) {
 		this.zipCode = zipCode;
+	}
+
+	public String getCourseCode() {
+		return courseCode;
+	}
+
+	public void setCourseCode(String courseCode) {
+		this.courseCode = courseCode;
 	}
 
 	

@@ -8,6 +8,8 @@ import javax.validation.constraints.Size;
 
 public class Customer {
 	
+	//added this comment to test the gitpush
+	
 	private String firstName;
 	
 	@NotNull(message = "is required")

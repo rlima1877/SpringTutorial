@@ -10,6 +10,10 @@ public class Customer {
 	
 	//added this comment to test the gitpush
 	
+	//added another line
+	
+	// another one!
+	
 	private String firstName;
 	
 	@NotNull(message = "is required")
